@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
+import { Layout } from "../components/Layout";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex w-screen h-screen justify-center items-center bg-black">
-      <h1 className="text-white">Hello NextJS</h1>
-    </div>
+    <Layout title="Home">
+      <h1 className="text-black text-9xl">Hello NextJS</h1>
+    </Layout>
   );
 };
 

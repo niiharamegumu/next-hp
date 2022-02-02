@@ -1,3 +1,11 @@
-export const Blog = () => {
-  return <div>Blog Page...</div>;
+import { Layout } from "../components/Layout";
+
+const Blog = () => {
+  return (
+    <Layout title="Blog">
+      <div>Blog Page...</div>
+    </Layout>
+  );
 };
+
+export default Blog;
