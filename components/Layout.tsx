@@ -25,6 +25,16 @@ export const Layout: VFC<Props> = (props) => {
       <main className="flex flex-1 justify-center items-center flex-col w-screen">
         {children}
       </main>
+      <footer className="w-screen py-6 border-t flex items-center justify-center gap-5">
+        by niihara megumu
+        <Image
+          src="/vercel.svg"
+          alt="vercel log"
+          className="h-4"
+          width={50}
+          height={50}
+        />
+      </footer>
     </div>
   );
 };
