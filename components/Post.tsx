@@ -1,18 +1,18 @@
+import Link from "next/link";
 import { VFC } from "react";
 import { Post as PostType } from "../type/post";
 
 type Props = {
-  id: number;
   post: PostType;
 };
 
 export const Post: VFC<Props> = (props) => {
-  const { id, post } = props;
+  const { post } = props;
   return (
-    <div>
-      {id} :{" "}
+    <div className="mb-2">
+      <span className="mr-2">{post.id}：</span>
       <span className="text-blue-500 cursor-pointer hover:text-gray-500">
-        {post.title}
+        <Link href={`/posts/${post.id}`}>{post.title}</Link>
       </span>
     </div>
   );

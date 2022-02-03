@@ -21,8 +21,7 @@ const Blog: VFC<Props> = ({ posts }) => {
     <Layout title="Blog">
       <h1 className="my-10 text-3xl">Blog Page</h1>
       <ul className="mb-20">
-        {posts &&
-          posts.map((post) => <Post key={post.id} id={post.id} post={post} />)}
+        {posts && posts.map((post) => <Post key={post.id} post={post} />)}
       </ul>
     </Layout>
   );
